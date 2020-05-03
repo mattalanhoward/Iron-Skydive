@@ -70,6 +70,8 @@ h5 {
 .nav-bar-ul {
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nav-bar-ul li {
@@ -84,10 +86,16 @@ h5 {
     background-size: cover;
     height: 650px;
     padding-top: 50px;
+    position: relative;
+
 }
 
 .quote {
     font-size: 2.5em;
+    position: absolute;
+    left: 10%;
+    bottom: 100px;
+
 }
 
 .dark-background {
@@ -107,6 +115,18 @@ h5 {
     text-align: center;
 }
 
+#general-information{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#general-information .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+}
+
 .link-btn {
     background-color: rgb(67,163,230);
     color: white;
@@ -115,6 +135,7 @@ h5 {
     letter-spacing: 0.5px;
     text-align: center;
     text-decoration: none;
+    padding:10px 30px;
 }
 
 .service-box {
@@ -127,6 +148,13 @@ h5 {
     margin: 50px 5% 0 5%;
     padding: 20px;
     width: 40%;
+}
+
+#structure > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .service-box img {
@@ -148,11 +176,26 @@ h5 {
     height: 180px;
 }
 
+#team > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#team > div > article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer {
     text-align: center;
     font-size: 1.9em;
     padding: 40px 100px;
     margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .address {
@@ -202,3 +245,8 @@ td {
     text-align: center;
 }
 
+.map-frame {
+    height: 375px;
+    width: 60%;
+
+}
